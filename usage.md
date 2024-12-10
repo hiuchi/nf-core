@@ -2,11 +2,9 @@
 
 ## 目次
 
-### 1. nf-core/rnaseqのセットアップと実行
-- nf-coreとNextflowのインストール
-- `rnaseq`パイプラインの基本構造
-- コンフィグファイルの作成（Docker/Singularity環境対応）
-- RNA-Seq解析の実行と結果の確認
+### 1. セットアップ
+- Nextflowのインストール
+- `nf-core/rnaseq`と`nf-core/differentialabundance`のセットアップ
 
 ### 2. DEG解析の準備
 - 解析結果の整理
@@ -28,18 +26,35 @@
 - レポートの自動生成（Markdownを活用）
 
 ---
-## 1. nf-core/rnaseqのセットアップと実行
-### 1.1 nf-coreとNextflowのインストール
+## 1. Nextflowのインストール、nf-core/rnaseqとnf-core/differentialabundanceのセットアップ
+### 1.1 Nextflowのインストール
 
 まずは以下の手順でNextflowをインストールします。
 
 ```bash
-# Java（必要な場合）のインストール
-sudo apt-get update && sudo apt-get install -y openjdk-11-jdk
-
 # Nextflowのインストール
 curl -s https://get.nextflow.io | bash
 
 # 実行可能にするため、PATHに追加
-mv nextflow ~/bin/  # 必要に応じて適切なパスに移動
-export PATH=$PATH:~/bin/
+chmod +x nextflow
+mkdir -p $HOME/.local/bin/
+mv nextflow $HOME/.local/bin/
+
+# インストールできたかどうかの確認
+nextflow info
+```
+
+### `1.2 nf-core/rnaseq`と`nf-core/differentialabundance`のセットアップ
+## nf-coreパイプラインのPull方法
+
+nf-coreのパイプラインは、```nextflow pull```を使用してローカル環境にPull（取得）できます。以下は`rnaseq`と`differentialabundance`の取得手順です。
+
+### nf-core/rnaseqをPullする
+
+以下のコマンドを実行すると、`rnaseq`パイプラインをローカルにPullします。
+
+```bash
+# nf-core/rnaseqとnf-core/differentialabundanceパイプラインをPullする
+nextflow pull nf-core/rnaseq
+nextflow pull nf-core/differentialabundance
+```
