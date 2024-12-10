@@ -20,9 +20,26 @@
 
 ### 4. 結果の解釈と可視化
 - 発現差解析結果の基本的な解釈
-- 火山図、ヒートマップの作成（例：R/ggplot2使用）
+- ボルケーノプロット、ヒートマップの作成（例：R/ggplot2使用）
 - 上位DEGのアノテーションと機能解析
 
 ### 5. 応用編：データの共有とレポート作成
 - 結果を再現可能な形で共有（例：GitHub/GitHub Pages）
 - レポートの自動生成（Markdownを活用）
+
+---
+## 1. nf-core/rnaseqのセットアップと実行
+### 1.1 nf-coreとNextflowのインストール
+
+まずは以下の手順でNextflowをインストールします。
+
+```bash
+# Java（必要な場合）のインストール
+sudo apt-get update && sudo apt-get install -y openjdk-11-jdk
+
+# Nextflowのインストール
+curl -s https://get.nextflow.io | bash
+
+# 実行可能にするため、PATHに追加
+mv nextflow ~/bin/  # 必要に応じて適切なパスに移動
+export PATH=$PATH:~/bin/
