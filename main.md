@@ -3,22 +3,22 @@
 ## 目次
 
 ### 1. セットアップ
-- Nextflowのインストール
-- `nf-core/rnaseq`と`nf-core/differentialabundance`のセットアップ
+- 1.1 Nextflowのインストール
+- 1.2 `nf-core/rnaseq`と`nf-core/differentialabundance`のpull
 
 ### 2. 解析するデータと必要なファイルの確認
-- 解析するデータ
-- 生物学的条件のアノテーション
-- `differentialabundance`用の入力データ作成
+- 2.1 解析するデータの紹介
+- 2.2 データのダウンロード
 
 ### 3. nf-core/rnaseqの実行
-- 解析に必要なデータの準備
-- 解析
-- 実行結果の確認
+- 3.1 解析に必要なデータの準備
+- 3.2 解析の実行
+- 3.3 実行結果の確認
 
 ### 4. nf-core/differentialabundanceの実行
-- 解析
-- 実行結果の確認
+- 4.1 解析に必要なデータの準備
+- 4.2 解析の実行
+- 4.3 実行結果の確認
 
 ---
 ## 1. Nextflowのインストール、nf-core/rnaseqとnf-core/differentialabundanceのセットアップ
