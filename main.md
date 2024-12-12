@@ -121,6 +121,23 @@ tree
 
 ## 4. nf-core/differentialabundanceの実行
 ### 4.1 解析に必要なデータの準備
+`nf-core/differentialabundance`のためのsamplesheet.csvにはサンプル名、fastqファイルとグループ名を記述します。
+```
+sample,fastq_1,fastq_2,group
+SRR18273868,/home/hiuchi/test/fastq/SRR18273868_1.fastq.gz,/home/hiuchi/test/fastq/SRR18273868_2.fastq.gz,A
+SRR18273869,/home/hiuchi/test/fastq/SRR18273869_1.fastq.gz,/home/hiuchi/test/fastq/SRR18273869_2.fastq.gz,A
+SRR18273870,/home/hiuchi/test/fastq/SRR18273870_1.fastq.gz,/home/hiuchi/test/fastq/SRR18273870_2.fastq.gz,A
+SRR18273871,/home/hiuchi/test/fastq/SRR18273871_1.fastq.gz,/home/hiuchi/test/fastq/SRR18273871_2.fastq.gz,B
+SRR18273872,/home/hiuchi/test/fastq/SRR18273872_1.fastq.gz,/home/hiuchi/test/fastq/SRR18273872_2.fastq.gz,B
+SRR18273873,/home/hiuchi/test/fastq/SRR18273873_1.fastq.gz,/home/hiuchi/test/fastq/SRR18273873_2.fastq.gz,B
+```
+
+contrast.csvは比較のレイアウトを記述します。
+```
+id,variable,reference,target
+DEG_analysis,group,A,B
+```
+
 ### 4.2 解析の実行
 ```
 nextflow run nf-core/differentialabundance \
@@ -135,3 +152,6 @@ nextflow run nf-core/differentialabundance \
 ```
 
 ### 4.3 実行結果の確認
+```
+tree
+```
