@@ -147,7 +147,7 @@ nextflow run nf-core/differentialabundance \
     --contrasts contrast.csv \
     --matrix ./quant/star_rsem/rsem.merged.gene_counts.tsv \
     --gtf /path/to/gencode.v46.basic.annotation.gtf \
-    --outdir DE \
+    --outdir DE
 ```
 
 ### 4.3 実行結果の確認
