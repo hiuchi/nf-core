@@ -43,7 +43,7 @@ nextflow info
 nf-coreのパイプラインは、```nextflow pull```を使用してローカル環境にpull（取得）できます。以下のコマンドを実行すると、`rnaseq`パイプラインをローカルにpullします。
 
 ```bash
-# nf-core/rnaseqとnf-core/differentialabundanceパイプラインをPullする
+# nf-core/rnaseqとnf-core/differentialabundanceパイプラインをpullする
 nextflow pull nf-core/rnaseq
 nextflow pull nf-core/differentialabundance
 ```
@@ -52,4 +52,30 @@ nextflow pull nf-core/differentialabundance
 公共データをダウンロードするために必要なSRA-Toolkitをインストールします。
 ```bash
 conda install -c bioconda sra-tools
+```
+
+## 2. 解析するデータと必要なファイルの確認
+### 2.1 解析するデータの紹介
+今回は新たに設計されたチロシンキナーゼ阻害剤APG-2449をヒト組織に投与し、反応があった群と反応がなかった群の比較を行います。
+
+Fang DD, Tao R, Wang G, Li Y, Zhang K, Xu C, Zhai G, Wang Q, Wang J, Tang C, Min P, Xiong D, Chen J, Wang S, Yang D, Zhai Y. Discovery of a novel ALK/ROS1/FAK inhibitor, APG-2449, in preclinical non-small cell lung cancer and ovarian cancer models. BMC Cancer. 2022 Jul 11;22(1):752. doi: 10.1186/s12885-022-09799-4. PMID: 35820889; PMCID: PMC9277925.
+
+### 2.2 データのダウンロード
+NCBIから上記のデータをダウンロードします。
+
+```bash
+# データのダウンロード
+mkdir fastq
+cd fastq
+prefetch SRR18273868
+prefetch SRR18273869
+prefetch SRR18273870
+prefetch SRR18273871
+prefetch SRR18273872
+prefetch SRR18273873
+```
+
+```bash
+# ダウンロードしたデータをfastq形式に変換
+for i in `seq 68 73` ; do fasterq-dump -p -e 8 ./SRR182738$i/SRR182738$i.sra ; done
 ```
