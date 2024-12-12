@@ -234,7 +234,7 @@ nextflow run nf-core/differentialabundance \
     -profile rnaseq,docker \
     --input samplesheet_differentialabundance.csv \
     --contrasts contrast.csv \
-    --matrix ./quant/star_rsem/rsem.merged.gene_counts.tsv \
+    --matrix ./quant/star_salmon/salmon.merged.gene_counts_length_scaled.tsv \
     --gtf /path/to/gencode.v46.basic.annotation.gtf \
     --outdir DE
 ```
