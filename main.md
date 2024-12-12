@@ -132,7 +132,7 @@ SRR18273872,/home/hiuchi/test/fastq/SRR18273872_1.fastq.gz,/home/hiuchi/test/fas
 SRR18273873,/home/hiuchi/test/fastq/SRR18273873_1.fastq.gz,/home/hiuchi/test/fastq/SRR18273873_2.fastq.gz,B
 ```
 
-contrast.csvは比較のレイアウトを記述します。
+contrast.csvには比較のレイアウトを記述します。
 ```
 id,variable,reference,target
 DEG_analysis,group,A,B
