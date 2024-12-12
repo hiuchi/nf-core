@@ -227,6 +227,7 @@ DEG_analysis,group,A,B
 ```
 
 ### 4.2 解析の実行
+パイプラインのバージョン1.5.0で解析を実行します。
 ```
 nextflow run nf-core/differentialabundance \
     -r 1.5.0 \
@@ -239,6 +240,7 @@ nextflow run nf-core/differentialabundance \
 ```
 
 ### 4.3 実行結果の確認
+出力されたファイルを確認します。
 ```
 tree -L 2
 .
