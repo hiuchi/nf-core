@@ -137,11 +137,13 @@ tree -L 2
 │   ├── execution_trace_2024-12-12_20-29-13.txt
 │   ├── execution_trace_2024-12-12_20-30-50.txt
 │   ├── execution_trace_2024-12-12_20-40-11.txt
+│   ├── execution_trace_2024-12-12_22-01-20.txt
 │   ├── nf_core_rnaseq_software_mqc_versions.yml
 │   ├── params_2024-12-12_17-53-38.json
 │   ├── params_2024-12-12_20-29-25.json
 │   ├── params_2024-12-12_20-31-03.json
 │   ├── params_2024-12-12_20-40-22.json
+│   ├── params_2024-12-12_22-01-32.json
 │   ├── pipeline_dag_2024-12-12_17-53-26.html
 │   ├── pipeline_dag_2024-12-12_20-30-50.html
 │   └── pipeline_dag_2024-12-12_20-40-11.html
@@ -200,6 +202,8 @@ tree -L 2
     ├── SRR18273872_trimmed_2.fastq.gz_trimming_report.txt
     ├── SRR18273873_trimmed_1.fastq.gz_trimming_report.txt
     └── SRR18273873_trimmed_2.fastq.gz_trimming_report.txt
+
+24 directories, 57 files
 ```
 
 
@@ -236,5 +240,32 @@ nextflow run nf-core/differentialabundance \
 
 ### 4.3 実行結果の確認
 ```
-tree
+tree -L 2
+.
+├── other
+│   └── deseq2
+├── pipeline_info
+│   ├── collated_versions.yml
+│   ├── execution_report_2024-12-12_20-56-57.html
+│   ├── execution_timeline_2024-12-12_20-56-57.html
+│   ├── execution_trace_2024-12-12_20-54-01.txt
+│   ├── execution_trace_2024-12-12_20-56-57.txt
+│   ├── params_2024-12-12_20-57-01.json
+│   └── pipeline_dag_2024-12-12_20-56-57.html
+├── plots
+│   ├── differential
+│   ├── exploratory
+│   └── qc
+├── report
+│   ├── study.html
+│   └── study.zip
+├── shinyngs_app
+│   ├── study
+│   └── versions.yml
+└── tables
+    ├── annotation
+    ├── differential
+    └── processed_abundance
+
+14 directories, 10 files
 ```
