@@ -102,6 +102,7 @@ SRR18273873,/path/to/userhome/test/fastq/SRR18273873_1.fastq.gz,/path/to/userhom
 ```
 
 ### 3.2 解析の実行
+解析を実行します。今回はパイプラインのバージョン3.17.0、リファレンスゲノムはGRCh38、Dockerを用いて解析を実行します。
 
 ```
 nextflow run nf-core/rnaseq \
@@ -114,6 +115,9 @@ nextflow run nf-core/rnaseq \
 
 ### 3.3 実行結果の確認
 
+```
+tree
+```
 
 
 ## 4. nf-core/differentialabundanceの実行
