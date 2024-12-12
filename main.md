@@ -109,7 +109,10 @@ nextflow run nf-core/rnaseq \
 	--gtf /path/to/gencode.v46.basic.annotation.gtf \
 	--gencode \
 	--igenomes_ignore \
-	--genome null
+	--genome null \
+	--skip_deseq2_qc \
+    	--skip_dupradar \
+    	--skip_biotype_qc
 ```
 
 ### 3.3 実行結果の確認
