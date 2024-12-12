@@ -106,11 +106,11 @@ SRR18273873,/path/to/userhome/test/fastq/SRR18273873_1.fastq.gz,/path/to/userhom
 
 ```
 nextflow run nf-core/rnaseq \
-    -r 3.17.0 \ # パイプラインのバージョンの指定
-    -profile docker \ # Dockerを用いてパイプラインが起動
-    --input samplesheets_rnaseq.csv \ # サンプルシートの指定
-    --outdir quant \ # 結果の出力先の指定
-    --genome GRCh38 # 使用するゲノムの指定
+    -r 3.17.0 \
+    -profile docker \
+    --input samplesheets_rnaseq.csv \
+    --outdir quant \
+    --genome GRCh38
 ```
 
 ### 3.3 実行結果の確認
