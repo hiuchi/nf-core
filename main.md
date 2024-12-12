@@ -93,12 +93,12 @@ samplesheets_rnaseq.csvファイルにサンプル名とfastqファイルのパ�
 
 ```
 sample,fastq_1,fastq_2,strandedness
-SRR18273868,~/test/fastq/SRR18273868_1.fastq,~/test/fastq/SRR18273868_2.fastq,auto
-SRR18273869,~/test/fastq/SRR18273869_1.fastq,~/test/fastq/SRR18273869_2.fastq,auto
-SRR18273870,~/test/fastq/SRR18273870_1.fastq,~/test/fastq/SRR18273870_2.fastq,auto
-SRR18273871,~/test/fastq/SRR18273871_1.fastq,~/test/fastq/SRR18273871_2.fastq,auto
-SRR18273872,~/test/fastq/SRR18273872_1.fastq,~/test/fastq/SRR18273872_2.fastq,auto
-SRR18273873,~/test/fastq/SRR18273873_1.fastq,~/test/fastq/SRR18273873_2.fastq,auto
+SRR18273868,~/test/fastq/SRR18273868_1.fastq.gz,~/test/fastq/SRR18273868_2.fastq.gz,auto
+SRR18273869,~/test/fastq/SRR18273869_1.fastq.gz,~/test/fastq/SRR18273869_2.fastq.gz,auto
+SRR18273870,~/test/fastq/SRR18273870_1.fastq.gz,~/test/fastq/SRR18273870_2.fastq.gz,auto
+SRR18273871,~/test/fastq/SRR18273871_1.fastq.gz,~/test/fastq/SRR18273871_2.fastq.gz,auto
+SRR18273872,~/test/fastq/SRR18273872_1.fastq.gz,~/test/fastq/SRR18273872_2.fastq.gz,auto
+SRR18273873,~/test/fastq/SRR18273873_1.fastq.gz,~/test/fastq/SRR18273873_2.fastq.gz,auto
 ```
 
 ### 3.2 解析の実行
