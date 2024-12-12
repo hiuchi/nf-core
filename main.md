@@ -1,4 +1,4 @@
-# nf-core RNA-Seq and DEG Analysis Tutorial
+# NextflowでRNA-seq解析を行う
 
 ## 目次
 
