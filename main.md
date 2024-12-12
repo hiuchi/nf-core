@@ -142,13 +142,12 @@ DEG_analysis,group,A,B
 ```
 nextflow run nf-core/differentialabundance \
     -r 1.5.0 \
-    --study_name HLA \
-    --input ./files/samplesheets/HLA.csv \
-    --contrasts ./files/contrasts/HLA_contrast.csv \
+    -profile rnaseq,docker \
+    --input samplesheet_differentialabundance.csv \
+    --contrasts contrast.csv \
     --matrix ./quant/star_rsem/rsem.merged.gene_counts.tsv \
     --gtf /path/to/gencode.v46.basic.annotation.gtf \
     --outdir DE \
-    -profile rnaseq,docker
 ```
 
 ### 4.3 実行結果の確認
