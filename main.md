@@ -73,7 +73,7 @@ mkdir fastq
 cd fastq
 
 # fastqファイルのダウンロード
-for i in `seq 68 73` ; do fasterq-dump  -p -e 8 SRR182738${i} --split-files ; done
+for i in `seq 68 73` ; do fasterq-dump -p -e 8 SRR182738${i} --split-files ; done
 
 # fastqを圧縮
 gzip -v *.fastq
