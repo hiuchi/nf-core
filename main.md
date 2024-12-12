@@ -88,12 +88,12 @@ samplesheets_rnaseq.csvファイルにサンプル名とfastqファイルのパ�
 ファイルは絶対パスで指定して下さい。
 ```
 sample,fastq_1,fastq_2,strandedness
-SRR18273868,/path/to/userhome/test/fastq/SRR18273868_1.fastq.gz,/path/to/userhome/test/fastq/SRR18273868_2.fastq.gz,auto
-SRR18273869,/path/to/userhome/test/fastq/SRR18273869_1.fastq.gz,/path/to/userhome/test/fastq/SRR18273869_2.fastq.gz,auto
-SRR18273870,/path/to/userhome/test/fastq/SRR18273870_1.fastq.gz,/path/to/userhome/test/fastq/SRR18273870_2.fastq.gz,auto
-SRR18273871,/path/to/userhome/test/fastq/SRR18273871_1.fastq.gz,/path/to/userhome/test/fastq/SRR18273871_2.fastq.gz,auto
-SRR18273872,/path/to/userhome/test/fastq/SRR18273872_1.fastq.gz,/path/to/userhome/test/fastq/SRR18273872_2.fastq.gz,auto
-SRR18273873,/path/to/userhome/test/fastq/SRR18273873_1.fastq.gz,/path/to/userhome/test/fastq/SRR18273873_2.fastq.gz,auto
+SRR18273868,/path/to/fastq/SRR18273868_1.fastq.gz,/path/to/fastq/SRR18273868_2.fastq.gz,auto
+SRR18273869,/path/to/fastq/SRR18273869_1.fastq.gz,/path/to/fastq/SRR18273869_2.fastq.gz,auto
+SRR18273870,/path/to/fastq/SRR18273870_1.fastq.gz,/path/to/fastq/SRR18273870_2.fastq.gz,auto
+SRR18273871,/path/to/fastq/SRR18273871_1.fastq.gz,/path/to/fastq/SRR18273871_2.fastq.gz,auto
+SRR18273872,/path/to/fastq/SRR18273872_1.fastq.gz,/path/to/fastq/SRR18273872_2.fastq.gz,auto
+SRR18273873,/path/to/fastq/SRR18273873_1.fastq.gz,/path/to/fastq/SRR18273873_2.fastq.gz,auto
 ```
 
 ### 3.2 解析の実行
