@@ -101,11 +101,15 @@ SRR18273873,/path/to/fastq/SRR18273873_1.fastq.gz,/path/to/fastq/SRR18273873_2.f
 
 ```
 nextflow run nf-core/rnaseq \
-    -r 3.17.0 \
-    -profile docker \
-    --input samplesheets_rnaseq.csv \
-    --outdir quant \
-    --genome GRCh38
+	-r 3.17.0 \
+	-profile docker \
+	--input samplesheets_rnaseq.csv \
+	--outdir quant \
+	--fasta /path/to/genome/GRCh38.primary_assembly.genome.fa \
+	--gtf /path/to/gencode.v46.basic.annotation.gtf \
+	--gencode \
+	--igenomes_ignore \
+	--genome null
 ```
 
 ### 3.3 実行結果の確認
@@ -118,4 +122,16 @@ tree
 ## 4. nf-core/differentialabundanceの実行
 ### 4.1 解析に必要なデータの準備
 ### 4.2 解析の実行
+```
+nextflow run nf-core/differentialabundance \
+    -r 1.5.0 \
+    --study_name HLA \
+    --input ./files/samplesheets/HLA.csv \
+    --contrasts ./files/contrasts/HLA_contrast.csv \
+    --matrix ./quant/star_rsem/rsem.merged.gene_counts.tsv \
+    --gtf /path/to/gencode.v46.basic.annotation.gtf \
+    --outdir DE \
+    -profile rnaseq,docker
+```
+
 ### 4.3 実行結果の確認
