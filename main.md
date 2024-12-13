@@ -65,7 +65,7 @@ Singularityおよびcondaを用いて実行することもできますが、こ�
 Fang DD, Tao R, Wang G, Li Y, Zhang K, Xu C, Zhai G, Wang Q, Wang J, Tang C, Min P, Xiong D, Chen J, Wang S, Yang D, Zhai Y. Discovery of a novel ALK/ROS1/FAK inhibitor, APG-2449, in preclinical non-small cell lung cancer and ovarian cancer models. BMC Cancer. 2022 Jul 11;22(1):752. doi: 10.1186/s12885-022-09799-4. PMID: 35820889; PMCID: PMC9277925.
 
 ### 2.2 データのダウンロードと変換
-NCBIから上記のデータをダウンロードします。作業環境により10分から数十分程度かかることがあります。
+NCBIから上記のデータをダウンロードします。作業環境により数十分から数時間程度かかることがあります。
 
 ```bash
 # データのダウンロード
